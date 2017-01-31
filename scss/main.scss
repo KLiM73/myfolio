@@ -1,0 +1,43 @@
+$header-background-color: #02918c;
+$black: #000;
+$white: #FFF;
+$fonts: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $fonts;
+}
+
+.clearfix {
+
+}
+
+header {
+  background-color: $header-background-color;
+  height: 6.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 20px 50px;
+
+}
+
+.nav-item {
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.screen-1 {
+  background: url("");
+}
