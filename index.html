@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>MyFolio</title>
-    <link rel="stylesheet" href="./static/build/styles.css">
+    <link rel="stylesheet" href="./build/styles.css">
 </head>
 <body>
 <header>
-    <img class="logo" src="img/myfolio.png">
+    <img class="logo">
     <nav>
         <a href="#home" class="nav-item">Home</a>
         <a href="#about" class="nav-item">About me</a>
@@ -16,38 +16,43 @@
         <a href="#contact" class="nav-item">Contact me</a>
     </nav>
 </header>
+
 <section class="screen screen-1">
-    <span class="screen-1__title-1">Lorem ipsum dolor sit iusmod tempor</span>
-    <a name="home" class="screen-1__title-2">Incidunt bore</a>
-    <span class="screen-1__title-3">Orem ipsum dolor sit amet, consectetur</span>
-    <a href="" class="screen-1__more-button">Know more</a>
-    <img src="img/figure@2x.svg">
+    <div class="screen-1__transp">
+        <div class="screen-1__content">
+            <span class="screen-1__title-1">Lorem ipsum dolor sit iusmod tempor</span>
+            <a name="home" class="screen-1__title-2">Incidunt bore</a>
+            <span class="screen-1__title-3">Orem ipsum dolor sit amet, consectetur</span>
+            <img class="screen-1__figure"><br>
+            <a href="" class="screen-1__more-button">Know more</a>
+        </div>
+    </div>
 </section>
 
 <section class="screen screen-2">
     <a name="about" class="screen__title">About me</a>
-    <span>~~~~~~~~ :: ~~~~~~~~</span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    <span class="screen__title-span">~~~~~~~~ :: ~~~~~~~~</span>
+    <p class="screen-2__desc screen__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat duis aute irure dolor.</p>
 
     <div class="screen-2__feauters">
-        <div class="screen-2__feauters-item">
-            <img src="img/">
+        <div class="screen-2__feauters-item screen-2__item1">
+            <img class="feauters-item__img screen-2__item1-img">
             <span class="feauters-item__title">Title goes here</span>
             <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
         </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
+        <div class="screen-2__feauters-item screen-2__item2">
+            <img class="feauters-item__img screen-2__item2-img">
             <span class="feauters-item__title">Title goes here</span>
             <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
         </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
+        <div class="screen-2__feauters-item screen-2__item3">
+            <img class="feauters-item__img screen-2__item3-img">
             <span class="feauters-item__title">Title goes here</span>
             <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
         </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
+        <div class="screen-2__feauters-item screen-2__item4">
+            <img class="feauters-item__img screen-2__item4-img">
             <span class="feauters-item__title">Title goes here</span>
             <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
         </div>
@@ -55,36 +60,40 @@
 </section>
 
 <section class="screen screen-3">
-    <a name="services" class="screen__title">Services</a>
-    <span>~~~~~ :: ~~~~~</span>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.</span>
-    <div class="screen-3__feauters">
-        <div class="screen-2__feauters-item">
-            <img src="img/">
-            <span class="feauters-item__title">Title goes here</span>
-            <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
-        </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
-            <span class="feauters-item__title">Title goes here</span>
-            <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
-        </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
-            <span class="feauters-item__title">Title goes here</span>
-            <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
-        </div>
-        <div class="screen-2__feauters-item">
-            <img src="img/">
-            <span class="feauters-item__title">Title goes here</span>
-            <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
+    <div class="screen-3__transp">
+        <div class="screen-3__content">
+            <a name="services" class="screen__title">Services</a>
+            <span class="screen__title-span">~~~~~ :: ~~~~~</span>
+            <span class="screen__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.</span>
+            <div class="screen-3__feauters">
+                <div class="screen-2__feauters-item">
+                    <img src="img/">
+                    <span class="feauters-item__title">Title goes here</span>
+                    <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
+                </div>
+                <div class="screen-2__feauters-item">
+                    <img src="img/">
+                    <span class="feauters-item__title">Title goes here</span>
+                    <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
+                </div>
+                <div class="screen-2__feauters-item">
+                    <img src="img/">
+                    <span class="feauters-item__title">Title goes here</span>
+                    <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
+                </div>
+                <div class="screen-2__feauters-item">
+                    <img src="img/">
+                    <span class="feauters-item__title">Title goes here</span>
+                    <span class="feauters-item__desc">onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</span>
+                </div>
+    </div>
         </div>
     </div>
 </section>
 
 <section class="screen screen-4">
     <a name="work" class="screen__title">My work</a>
-    <span>~~~~~ :: ~~~~~</span>
+    <span class="screen__title-span">~~~~~ :: ~~~~~</span>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
     <div class="screen-4__gallery">
         <div class="screen-4__gallery-item">
@@ -148,7 +157,7 @@
 
 <footer class="screen screen-5">
     <a name="contact" class="screen__title">Contact me</a>
-    <span>~~~~~ :: ~~~~~</span>
+    <span class="screen__title-span">~~~~~ :: ~~~~~</span>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
     <form>
         <input type="text">

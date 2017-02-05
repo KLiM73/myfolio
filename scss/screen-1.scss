@@ -1,0 +1,77 @@
+header {
+  background-color: $header-background-color;
+  height: 6.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 20px 50px;
+  content: url("../img/myfolio.png");
+}
+
+.nav-item {
+  font-family: $openSansExtrabold;
+  text-decoration: none;
+  color: $white;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.screen-1 {
+  background: url("../img/screen-1-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 56vw;
+  color: $white;
+  text-align: center;
+
+  &__transp {
+    background-color: rgba(0,0,0,0.34);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    text-align: center;
+  }
+  &__title-1 {
+    font-family: $openSansRegular;
+    display: block;
+    font-size: 30px;
+  }
+  &__title-2 {
+    font-family: $openSansExtrabold;
+    font-size: 68px;
+    display: block;
+    text-transform: uppercase;
+  }
+  &__title-3 {
+    font-family: $openSansRegular;
+    display: block;
+    font-size: 18px;
+  }
+
+  &__figure {
+    content: url('../img/figure@2x.svg');
+    margin-top: 48px;
+    margin-bottom: 52px;
+  }
+
+  &__more-button {
+    font-family: $openSansExtrabold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black;
+    padding: 18px 42px;
+    background-color: #cfc91d;
+    display: inline-block;
+  }
+}

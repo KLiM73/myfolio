@@ -1,17 +1,19 @@
 webpack = require('webpack');
-//noinspection JSAnnotator
 path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-webpackConfig = {
+
+module.exports = {
     context: __dirname,
     entry: {
-        styles: './static/main.scss'
+        styles: './scss/main.scss'
     },
     output: {
-        path: './static/build',
-        library: '[name]',
-        filename: '[name].css'
+        filename: '[name].css',
+        path: './build'
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     },
     devtool: '#cheap-module-source-map',
     watch: true,
@@ -27,6 +29,10 @@ webpackConfig = {
             {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            },
+            {
+                test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
+                loader: 'file-loader'
             }
         ]
     },
@@ -36,4 +42,3 @@ webpackConfig = {
         })
     ]
 };
-module.exports = webpackConfig;

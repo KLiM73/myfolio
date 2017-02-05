@@ -1,43 +1,57 @@
 $header-background-color: #02918c;
 $black: #000;
 $white: #FFF;
-$fonts: 'Open Sans', sans-serif;
+$text: #7e8287;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
+@import './fonts';
+
 
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: $fonts;
+  font-family: $openSansRegular;
+  margin: 0;
 }
 
-.clearfix {
-
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-header {
-  background-color: $header-background-color;
-  height: 6.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.screen {
+  &__title {
+    font-family: $openSansExtrabold;
+    color: $header-background-color;
+    font-size: 46px;
+    display: block;
+    text-align: center;
+    margin-top: 9.8rem;
+    &-span {
+      font-family: $openSansRegular;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      color: $text;
+    }
+  }
+  &__desc {
+    font-family: $openSansRegular;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin: auto 203px;
+    color: $text;
+    margin-bottom: 11.6rem;
+  }
 }
 
-.logo {
-  margin: 20px 50px;
-
+section {
+  justify-content: center;
+  width: 100vw;
 }
 
-.nav-item {
-  text-decoration: none;
-  color: $white;
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-right: 30px;
-}
-
-.screen-1 {
-  background: url("");
-}
+@import "screen-1";
+@import "screen-2";
+@import "screen-3";
